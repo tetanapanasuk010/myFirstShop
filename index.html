@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luvia Lingerie | Твоя ніжна таємниця</title>
+    
+    <script>
+        // ВСТАВТЕ ВАШ ID ТУТ:
+        const pixelID = '3269323609912297';
+
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        
+        fbq('init', pixelID); 
+        fbq('track', 'PageView');
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --soft-pink: #fdf2f2;
+            --accent-pink: #f8a5a5;
+            --gold: #d4af37;
+        }
+        body { font-family: 'Montserrat', sans-serif; background-color: #fffafa; }
+        .serif { font-family: 'Cormorant Garamond', serif; }
+        .hero-section {
+            background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.1)), 
+                        url('./images/image_8.png'); 
+            background-size: cover;
+            background-position: center;
+        }
+        .btn-float {
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 20px -10px rgba(248, 165, 165, 0.5);
+        }
+        .btn-float:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px -10px rgba(248, 165, 165, 0.7);
+        }
+        .product-card img {
+            transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .product-card:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+
+    <header class="hero-section min-h-screen flex flex-col items-center justify-center text-center px-6">
+        <div class="mb-6">
+            <span class="text-gold text-2xl">⚜️</span>
+            <h1 class="serif text-5xl md:text-7xl text-gray-800 mt-2">Luvia Lingerie</h1>
+            <p class="serif italic text-xl text-gray-600 tracking-widest mt-2 uppercase">Твоя ніжна таємниця</p>
+        </div>
+        
+        <h2 class="serif text-3xl md:text-5xl text-gray-800 max-w-3xl leading-snug mt-12">
+            Білизна, в яку ти <span class="italic text-pink-500 font-medium">закохаєшся</span>
+        </h2>
+        <p class="mt-6 text-gray-500 tracking-wide">Комфорт. Якість. Сексуальність.</p>
+        
+        <a href="https://t.me/my_shop_pay?text=Вітаю! 👋 Хочу зробити замовлення. Допоможіть оформити." 
+           onclick="fbq('track', 'Lead');"
+           class="mt-10 btn-float bg-[#f8a5a5] text-white px-10 py-4 rounded-full text-sm font-semibold tracking-widest uppercase transition-all">
+            Зв'язатися з менеджером (Telegram) ✈️
+        </a>
+    </header>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="serif text-3xl text-center mb-16 text-gray-800">Чому обирають нас?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-pink-50 rounded-full flex items-center justify-center mb-4 italic text-2xl serif text-pink-400">01</div>
+                    <h4 class="font-semibold uppercase text-xs tracking-widest mb-2">Ідеальна посадка</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Лекала, що повторюють вигини твого тіла.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-pink-50 rounded-full flex items-center justify-center mb-4 italic text-2xl serif text-pink-400">02</div>
+                    <h4 class="font-semibold uppercase text-xs tracking-widest mb-2">Натуральні тканини</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Преміальна бавовна та ніжне мереживо.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-pink-50 rounded-full flex items-center justify-center mb-4 italic text-2xl serif text-pink-400">03</div>
+                    <h4 class="font-semibold uppercase text-xs tracking-widest mb-2">Анонімна доставка</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Надійна упаковка без лишніх деталей.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-[#fdfcfc]">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="serif text-3xl mb-16 text-gray-800">Популярні моделі</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="product-card group cursor-pointer text-left">
+                    <div class="overflow-hidden bg-gray-100 mb-4 aspect-[4/5]">
+                        <img src="./images/image_9.png" alt="Ніжна класика" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="serif text-xl">Ніжна класика</h4>
+                    <p class="text-gray-400 text-xs uppercase tracking-widest mt-1">На кожен день. Безшовна.</p>
+                </div>
+                <div class="product-card group cursor-pointer text-left">
+                    <div class="overflow-hidden bg-gray-100 mb-4 aspect-[4/5]">
+                        <img src="./images/image_10.png" alt="Мереживна спокуса" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="serif text-xl">Мереживна спокуса</h4>
+                    <p class="text-gray-400 text-xs uppercase tracking-widest mt-1">Для особливих вечорів.</p>
+                </div>
+                <div class="product-card group cursor-pointer text-left">
+                    <div class="overflow-hidden bg-gray-100 mb-4 aspect-[4/5]">
+                        <img src="./images/image_11.png" alt="Базова білизна" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="serif text-xl">Базова білизна</h4>
+                    <p class="text-gray-400 text-xs uppercase tracking-widest mt-1">Комфорт у русі.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="serif text-3xl mb-16 text-gray-800">Як зробити замовлення?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-pink-50 rounded-full flex items-center justify-center mb-4 text-2xl">📱</div>
+                    <h4 class="font-semibold text-sm mb-2">Обираєш модель</h4>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-pink-50 rounded-full flex items-center justify-center mb-4 text-2xl">✈️</div>
+                    <h4 class="font-semibold text-sm mb-2">Тиснеш кнопку</h4>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-pink-50 rounded-full flex items-center justify-center mb-4 text-2xl">📏</div>
+                    <h4 class="font-semibold text-sm mb-2">Уточнюємо розмір</h4>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-pink-50 rounded-full flex items-center justify-center mb-4 text-2xl">📦</div>
+                    <h4 class="font-semibold text-sm mb-2">Отримуєш замовлення</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white text-center">
+        <div class="max-w-2xl mx-auto px-6 border-t border-b border-pink-100 py-16">
+            <h3 class="serif text-4xl mb-6">Готова оновити свій гардероб?</h3>
+            <p class="italic text-gray-500 mb-10 text-lg">Не чекай особливої події — будь особливою щодня.</p>
+            <a href="https://t.me/my_shop_pay" 
+               onclick="fbq('track', 'Lead');"
+               class="btn-float inline-block bg-[#f8a5a5] text-white px-10 py-4 rounded-full text-sm font-semibold tracking-widest uppercase transition-all">
+                Написати в Telegram ✈️
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>
